@@ -1,0 +1,39 @@
+<modal id="main-modal" size-delta-x="182" size-delta-y="80" show-event="show-detail" hide-event="hide">
+	<vertical>
+		<text text ="BeatSongProfile" align="Center"/>
+		<horizontal>
+			<vertical>
+				<horizontal>
+					<grid id="artworkContainer" cell-size-x=" 30" cell-size-y="30">
+						<clickable-image id="artwork" preserve-aspect="true" />
+					</grid>
+
+					<grid id="textContainer" cell-size-x=" 60" cell-size-y="20">
+						<text id="songText" text="" align="TopLeft" rich-text="true" word-wrapping="true" overflow-mode="Overflow" font-size="3"/>
+					</grid>
+				</horizontal>
+
+				<grid id="descriptionContainer" cell-size-x=" 75" cell-size-y="40">
+					<text-page id="description" text="description"></text-page>
+				</grid>
+			</vertical>
+
+			<vertical>
+				<horizontal>
+					<grid id="artworkContainer" cell-size-x=" 30" cell-size-y="30">
+						<clickable-image id="mapperIcon" preserve-aspect="true" />
+					</grid>
+
+					<grid id="textContainer" cell-size-x=" 60" cell-size-y="20">
+						<text id="mapperText" text="" align="TopLeft" rich-text="true" word-wrapping="true" overflow-mode="Overflow" font-size="3"/>
+					</grid>
+				</horizontal>
+
+				<grid id="descriptionContainer" cell-size-x=" 75" cell-size-y="40">
+					<text-page id="mapperDescription" text="description"></text-page>
+				</grid>
+			</vertical>
+		</horizontal>
+		<button text="Close" on-click="close-window"/>
+	</vertical>
+</modal>
